@@ -1,0 +1,19 @@
+@-moz-document domain("facebook.com") {
+     #rightCol {
+         display:none;
+    }
+     #contentArea {
+         right:0 !important;
+    }
+    
+    #contentArea div[role="feed"] {
+             opacity:0;
+             width:0;
+        }
+    
+    #contentArea #pagelet_group_ div[role="feed"] {
+                 opacity:100%;
+                 width:100%;
+            }
+}
+
