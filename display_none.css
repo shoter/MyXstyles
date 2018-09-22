@@ -1,0 +1,11 @@
+@-moz-document domain("wykop.pl") {
+    body{
+	display:none;
+    }
+}
+
+@-moz-document url("https://www.reddit.com/r/Polska/") {
+    body {
+  	display:none;  
+    }
+}
