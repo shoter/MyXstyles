@@ -4,6 +4,34 @@
     }
      #contentArea {
          right:0 !important;
+         opacity: 0;
+        pointer-events: none;
+    }
+    
+    .fbChatSidebar {
+      right: -150px !important;             
+      transition: all 0.5s ease-out;                                        
+    }
+    
+    .fbChatSidebar:hover {
+      right: 0px !important;                                              
+    }
+    
+    #content #pagelet_navigation {
+        opacity : 0;
+        transition: all 1s ease-out;  
+    }
+    
+    #blueBarDOMInspector{
+        
+    }
+    
+    ._5qqe::after {
+    	content: "Facebook Damiana";
+    }
+    
+	#content #pagelet_navigation:hover {
+        opacity : 100;
     }
     
     #contentArea div[role="feed"] {
@@ -16,4 +44,3 @@
                  width:100%;
             }
 }
-
