@@ -1,4 +1,3 @@
-@-moz-document domain("youtube.com") {
 ytd-comments {
     opacity: 0;
     pointer-events: none;
@@ -22,23 +21,18 @@ ytd-compact-playlist-renderer:hover {
     pointer-events: none;
 }
 
-ytd-reel-shelf-renderer {
-    opacity: 0;
-    pointer-events: none;
-    height: 0;
-}
 
-ytd-guide-entry-renderer:has(a[title=Shorts]) {
-    opacity: 0;
+ytd-rich-shelf-renderer
+{
+    opacity: 0 !important;
     height: 0;
     display: none;
     pointer-events: none;
 }
-}
 
-@-moz-document url("https://www.youtube.com/") {
- ytd-browse {
-     opacity: 0;
-     pointer-events: none;
- }
+ytd-guide-entry-renderer:has(a[title=Shorts]) {
+    opacity: 0 !important;
+    height: 0;
+    display: none;
+    pointer-events: none;
 }
