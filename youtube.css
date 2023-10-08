@@ -1,3 +1,4 @@
+@-moz-document domain("youtube.com") {
 ytd-comments {
     opacity: 0;
     pointer-events: none;
@@ -35,4 +36,12 @@ ytd-guide-entry-renderer:has(a[title=Shorts]) {
     height: 0;
     display: none;
     pointer-events: none;
+}
+}
+
+@-moz-document url("https://www.youtube.com/") {
+ ytd-browse {
+     opacity: 0;
+     pointer-events: none;
+ }
 }
