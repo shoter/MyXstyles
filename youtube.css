@@ -1,23 +1,44 @@
 @-moz-document domain("youtube.com") {
-    ytd-browse {
-    	opacity:0;
-        pointer-events: none;
-    }
+ytd-comments {
+    opacity: 0;
+    pointer-events: none;
+}
 
-    ytd-comments {
-        opacity : 0;
-        pointer-events: none;
-    }
+ytd-compact-video-renderer,
+ytd-compact-radio-renderer,
+ytd-compact-playlist-renderer {
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
 
-    ytd-compact-video-renderer,ytd-compact-radio-renderer,ytd-compact-playlist-renderer
-    {
-        opacity : 0;
-        transition: all 0.3s ease-out;
-    }
+ytd-compact-video-renderer:hover,
+ytd-compact-radio-renderer:hover,
+ytd-compact-playlist-renderer:hover {
+    opacity: 1;
+}
 
-    ytd-compact-video-renderer:hover,ytd-compact-radio-renderer:hover,ytd-compact-playlist-renderer:hover
-    {
-        opacity:1;
-    }
+#scroll-container {
+    opacity: 0;
+    pointer-events: none;
+}
 
+ytd-reel-shelf-renderer {
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+}
+
+ytd-guide-entry-renderer:has(a[title=Shorts]) {
+    opacity: 0;
+    height: 0;
+    display: none;
+    pointer-events: none;
+}
+}
+
+@-moz-document url("https://www.youtube.com/") {
+ ytd-browse {
+     opacity: 0;
+     pointer-events: none;
+ }
 }
